@@ -28,6 +28,7 @@ import kotlinx.coroutines.delay
 //Pantalla que muestra una imagen stática
 @Composable
 fun SplashScreen(navController: NavController){
+    //Lanzo una corrutina para darle un delay a la navegación
     LaunchedEffect(key1 = true) {
         delay(3000)
         navController.popBackStack()

@@ -58,8 +58,7 @@ fun CardDetalles(
 ) {
     Card(
         modifier= Modifier
-            .padding(5.dp)
-            .heightIn(min = 120.dp, max = 200.dp),
+            .padding(5.dp),
         shape = RoundedCornerShape(12.dp),
         colors = CardColors(containerColor =
             Color.LightGray,
@@ -77,7 +76,7 @@ fun CardDetalles(
             Column (
                 Modifier
                     .fillMaxWidth()
-                    .heightIn(min = 30.dp, max = 60.dp)
+                    .heightIn(min = 60.dp, max = 200.dp)
             ) {
                 Text(
                     text = cientifica.nombre,
